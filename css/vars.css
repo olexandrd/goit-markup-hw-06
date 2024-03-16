@@ -1,0 +1,17 @@
+:root {
+    --navyblue-cl: #2E2F42;
+    --iris-cl: #4D5AE5;
+    --ocean-cl: #404BBF;
+    --slate-cl: #434455;
+    --white-cl: #FFFFFF;
+    --cloud-cl: #F4F4FD;
+    --border-cl: #E7E9FC;
+    --lightslate-cl: #8E8F99;
+    --dairy-cl: #FCFCFC;
+    --green-cl: #31d0aa;
+    --main-font: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+    --intendance: 24px;
+    --section-padding: 120px;
+    --transform-properties: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

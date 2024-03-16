@@ -1,0 +1,79 @@
+/**
+  |############################ 
+  | HEADER
+  |############################
+ */
+
+.header {
+    border-bottom: 1px solid var(--border-cl);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 76px;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-nav-list-item {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.address-link {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color var(--transform-properties);
+}
+
+.header-link {
+    color: var(--navyblue-cl);
+    padding: 24px 0;
+    display: block;
+    transition: color var(--transform-properties);
+    position: relative;
+}
+
+.header-link-active {
+    color: var(--iris-cl);
+}
+
+.header-link-active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--iris-cl);
+    border-radius: 2px;
+}
+
+.address-link:hover,
+.address-link:focus,
+.header-link:hover,
+.header-link:focus {
+    color: var(--ocean-cl);
+}
+
+.header-logo-accent {
+    color: var(--navyblue-cl);
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}

@@ -1,0 +1,66 @@
+/**
+  |############################
+  | STUDIO styles
+  |############################
+*/
+.studio-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue-cl);
+    margin-bottom: 72px;
+}
+
+/**
+  |############################
+  | Hero styles
+  |############################
+*/
+.hero {
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero/img-01.jpg);
+    background-color: var(--navyblue-cl);
+}
+
+.hero .container {
+    color: var(--white-cl);
+    display: flex;
+    flex-direction: column;
+    padding: 188px 0;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    gap: 48px;
+    margin: 0;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    max-height: 120px;
+    max-width: 496px;
+}
+
+.hero-btn {
+    background-color: var(--iris-cl);
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    width: 169px;
+    display: block;
+    transition: background-color var(--transform-properties);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--ocean-cl);
+}

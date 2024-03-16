@@ -1,0 +1,65 @@
+/**
+  |############################
+  | TEAM
+  |############################
+*/
+.team {
+    background-color: var(--cloud-cl);
+    padding: var(--section-padding) 0;
+}
+
+.team-list {
+    display: flex;
+    gap: var(--intendance);
+    justify-content: space-between;
+}
+
+.team-item {
+    background-color: var(--white-cl);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.team-subtitle {
+    text-align: center;
+    color: var(--navyblue-cl);
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.team-text {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-social-list {
+    display: flex;
+    gap: var(--intendance);
+    justify-content: center;
+    /* padding: 8px 16px 32px 16px; */
+}
+
+.team-social-item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--iris-cl);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iris-cl);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color var(--transform-properties), border var(--transform-properties);
+}
+
+.team-social-item:hover,
+.team-social-item:focus {
+    background-color: var(--ocean-cl);
+    border: 1px solid var(--ocean-cl);
+}
+
+.team-social-link svg {
+    display: block;
+    fill: var(--white-cl);
+}

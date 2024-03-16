@@ -1,0 +1,213 @@
+/**
+   MODAL
+ */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity var(--transform-properties), visibility var(--transform-properties);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--dairy-cl);
+    min-height: 584px;
+    min-width: 408px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--transform-properties);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    background-color: var(--cornflower-cl);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color var(--transform-properties), border var(--transform-properties);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-btn-icon {
+    fill: var(--navyblue-cl);
+    transition: fill var(--transform-properties);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--ocean-cl);
+    border: none;
+}
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+    fill: var(--white-cl)
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 72px 24px 0 24px;
+    align-items: center;
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navyblue-cl);
+}
+
+.backdrop-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+
+}
+
+.backdrop-form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    position: relative;
+    transition: fill var(--transform-properties);
+    margin-bottom: 8px;
+}
+
+.backdrop-form-textarea-label {
+    margin-bottom: 16px;
+}
+
+.backdrop-form-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    transition: border-color var(--transform-properties);
+}
+
+.backdrop-form-text-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+}
+
+.backdrop-agreement {
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 24px;
+}
+
+.backdrop-agreement-link {
+    color: var(--iris-cl);
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.backdrop-btn {
+    background-color: var(--iris-cl);
+    border-radius: 4px;
+    border: 0;
+    transition: background-color var(--transform-properties);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    color: var(--white-cl);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    margin: 0 auto 24px auto;
+}
+
+.backdrop-btn:hover,
+.backdrop-btn:focus {
+    background-color: var(--ocean-cl);
+}
+
+.input-icon {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    pointer-events: none;
+}
+
+input {
+    padding-left: 38px;
+}
+
+.backdrop-form-text-input {
+    padding-left: 16px;
+    padding-top: 8px;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-custom {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-unchecked {
+    display: block;
+}
+
+.icon-checked {
+    display: none;
+}
+
+input[type="checkbox"]:checked+label .icon-checked {
+    display: block;
+}
+
+/* Hide unchecked icon when checkbox is checked */
+input[type="checkbox"]:checked+label .icon-unchecked {
+    display: none;
+}
+
+.backdrop-form-label:focus-within,
+.backdrop-form-input:focus-within {
+    border-color: var(--iris-cl);
+    fill: var(--iris-cl);
+}

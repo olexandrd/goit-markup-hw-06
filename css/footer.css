@@ -1,0 +1,132 @@
+/**
+  FOOTER
+ */
+.footer {
+    background-color: var(--navyblue-cl);
+    padding: 100px 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+}
+
+.footer-text {
+    color: var(--cloud-cl);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer-social-section .footer-text {
+    display: block;
+    font-weight: 500;
+
+}
+
+.footer-subscribe-wrapper .footer-text {
+    display: block;
+    font-weight: 500;
+}
+
+.footer-logo-link {
+    margin-bottom: 16px;
+}
+
+.footer-logo-accent {
+    color: var(--cloud-cl);
+}
+
+.footer-text {
+    max-width: 264px;
+}
+
+.footer-text-wrapper {
+    margin-right: 120px;
+}
+
+.footer-social-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-right: 80px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.footer-social-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--iris-cl);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iris-cl);
+    transition: background-color var(--transform-properties), border var(--transform-properties);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--green-cl);
+    border: 1px solid var(--green-cl);
+}
+
+.footer-social-link svg {
+    display: block;
+    fill: var(--white-cl);
+}
+
+.footer-subscribe-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-form-input {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--white-cl);
+    background-color: transparent;
+    border: 1px solid var(--white-cl);
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 264px;
+}
+
+.footer-form-button {
+    background-color: var(--iris-cl);
+    border-radius: 4px;
+    border: 0;
+    transition: background-color var(--transform-properties);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    color: var(--white-cl);
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: var(--ocean-cl);
+}
+
+.footer-form-button svg {
+    fill: var(--white-cl);
+}

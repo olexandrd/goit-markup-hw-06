@@ -1,0 +1,53 @@
+/**
+  |############################
+  | ADVANTAGE
+  |############################
+*/
+
+.advantage {
+    padding-top: var(--section-padding);
+}
+
+.advantage-subtitle {
+    color: var(--navyblue-cl);
+}
+
+.advantage-list {
+    display: flex;
+    gap: var(--intendance);
+}
+
+.advantage-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 264px;
+}
+
+.advantage-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--cloud-cl);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    width: 264px;
+}
+
+.action {
+    padding: var(--section-padding) 0;
+}
+
+.action-list {
+    display: flex;
+    gap: var(--intendance);
+    flex-direction: row;
+}
+
+.action-item {
+    width: 360px;
+    height: auto;
+}

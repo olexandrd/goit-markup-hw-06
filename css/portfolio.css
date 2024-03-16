@@ -1,0 +1,110 @@
+/**
+  |############################
+  | PORTFOLIO styles
+  |############################
+*/
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: var(--section-padding);
+}
+
+.portfolio-subtitle {
+    color: var(--navyblue-cl);
+}
+
+.portfolio-btn {
+    color: var(--iris-cl);
+    background-color: var(--cloud-cl);
+    border: 1px solid var(--border-cl);
+    border-radius: 4px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    transition:
+        background-color var(--transform-properties),
+        color var(--transform-properties),
+        box-shadow var(--transform-properties),
+        border var(--transform-properties);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--ocean-cl);
+    color: var(--white-cl);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent;
+}
+
+.portfolio-btn-list {
+    display: flex;
+    gap: var(--intendance);
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    gap: 48px var(--intendance);
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: calc((100% - 2*var(--intendance)) / 3);
+    transition: box-shadow var(--transform-properties);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item-link {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item:hover .portfolio-overlay,
+.portfolio-item:focus .portfolio-overlay {
+    transform: translateY(0);
+}
+
+.portfolio-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 15px;
+    border: 1px solid var(--border-cl);
+    border-top: 0px;
+}
+
+/* Overlay */
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris-cl);
+    transform: translateY(100%);
+    transition: transform var(--transform-properties);
+}
+
+.portfolio-overlay-text {
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud-cl);
+}
