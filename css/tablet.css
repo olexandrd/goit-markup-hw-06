@@ -43,4 +43,40 @@
             url(../images/hero/img-01.jpg);
 
     }
+
+    .advantage-icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: var(--cloud-cl);
+        border-radius: 4px;
+        margin-bottom: 8px;
+        width: 264px;
+    }
+
+    .advantage-list {
+        display: flex;
+        flex-direction: row;
+        gap: var(--intendance);
+    }
+
+    .advantage-subtitle {
+        color: var(--navyblue-cl);
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    .advantage-item {
+        justify-content: flex-start;
+    }
+
+    .action {
+        display: unset;
+    }
+
+    .team-list {
+        flex-direction: row;
+    }
+
 }

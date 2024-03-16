@@ -22,7 +22,7 @@
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/hero/img-01.jpg);
+        url(../images/hero/img-02.jpg);
     background-color: var(--navyblue-cl);
     background-position: center;
     background-size: cover;

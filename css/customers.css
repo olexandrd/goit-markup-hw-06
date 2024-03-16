@@ -1,7 +1,7 @@
 .customers {
     display: flex;
     flex-direction: column;
-    gap: var(--intendance);
+    gap: 72px;
     padding: var(--section-padding) 0;
 }
 
@@ -14,18 +14,19 @@
 
 .customers-list {
     display: flex;
-    gap: var(--intendance);
+    gap: 16px;
     justify-content: center;
     align-items: center;
-    width: 1128px;
-
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .customers-item {
-    width: calc((100% - 2*var(--intendance)) / 6);
+    width: calc((100% - 16px) / 2);
     display: block;
     border-radius: 4px;
     height: 88px;
+    margin-bottom: 56px;
 }
 
 

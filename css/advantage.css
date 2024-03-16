@@ -10,41 +10,45 @@
 
 .advantage-subtitle {
     color: var(--navyblue-cl);
+    font-weight: 700;
+    font-size: 36px;
 }
 
 .advantage-list {
     display: flex;
+    flex-direction: column;
     gap: var(--intendance);
+    justify-content: center;
+    align-items: center;
 }
 
 .advantage-item {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    width: 264px;
+}
+
+.advantage-text {
+    display: block;
+    max-width: 100%;
 }
 
 .advantage-icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: var(--cloud-cl);
-    border-radius: 4px;
-    margin-bottom: 8px;
-    width: 264px;
+    display: none;
 }
 
 .action {
     padding: var(--section-padding) 0;
+    display: none;
 }
 
 .action-list {
     display: flex;
     gap: var(--intendance);
     flex-direction: row;
+
 }
 
 .action-item {
