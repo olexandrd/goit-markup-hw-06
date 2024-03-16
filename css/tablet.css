@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .container {
+        max-width: 736px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .header-nav {
+        gap: 76px;
+    }
+
+    .header-nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .address-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .menu-toggle,
+    .menu {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-height: 120px;
+        max-width: 496px;
+    }
+
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/img-01.jpg);
+
+    }
+}

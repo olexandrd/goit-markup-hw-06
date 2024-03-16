@@ -24,6 +24,9 @@
             rgba(46, 47, 66, 0.7)),
         url(../images/hero/img-01.jpg);
     background-color: var(--navyblue-cl);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero .container {
@@ -40,13 +43,13 @@
 
 .hero-title {
     font-weight: 700;
-    font-size: 56px;
-    font-style: normal;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11111;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
-    max-height: 120px;
-    max-width: 496px;
+    max-width: 320px;
+    color: var(--white-cl);
 }
 
 .hero-btn {

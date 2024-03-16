@@ -130,3 +130,145 @@
 .footer-form-button svg {
     fill: var(--white-cl);
 }
+
+/* MOBIlE MENU*/
+.mobile-backdrop {
+    transform: translateX(100%);
+}
+
+.mobile-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    min-width: 320px;
+    padding: 24px 24px 40px 40px;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    background-color: var(--white-cl);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.mobile-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.mobile-menu-list {
+    margin-bottom: auto;
+}
+
+.mobile-menu-btn {
+    min-width: 24px;
+    min-height: 24px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    border-radius: 50%;
+    border: 1px solid rgba(46, 47, 66, 0.10);
+    background-color: rgba(231, 233, 252, 0.10);
+
+    margin-bottom: 40px;
+}
+
+.mobile-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-link {
+    color: var(--navyblue-cl);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+@media not (hover: hover) {
+    .mobile-menu-link:active {
+        color: var(--ocean-cl);
+    }
+}
+
+.mobile-address-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex-direction: column;
+
+    margin-bottom: 48px;
+}
+
+.mobile-phone-link {
+    color: var(--iris-cl);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 400.98px) {
+    .mobile-phone-link {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 319.98px) {
+    .mobile-phone-link {
+        font-size: 24px;
+    }
+}
+
+.mobile-email-link {
+    color: var(--slate-cl);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 400.98px) {
+    .mobile-email-link {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 319.98px) {
+    .mobile-email-link {
+        font-size: 14px;
+    }
+}
+
+.mobile-social-list {
+    display: flex;
+    gap: 56px;
+}
+
+@media only screen and (max-width: 400.98px) {
+    .mobile-social-list {
+        gap: 32px;
+    }
+}
+
+@media only screen and (max-width: 319.98px) {
+    .mobile-social-list {
+        gap: 28px;
+    }
+}
