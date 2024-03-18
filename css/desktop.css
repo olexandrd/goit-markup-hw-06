@@ -43,6 +43,19 @@
             url(../images/hero/img-01.jpg);
     }
 
+    @media (min-resolution: 192dpi) {
+        .hero {
+            background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero/img-01@2x.jpg);
+        }
+    }
+
+    .advantage {
+        padding-bottom: var(--section-padding);
+    }
+
     .advantage-icon-container {
         display: flex;
         align-items: center;
@@ -72,11 +85,30 @@
 
     .action {
         display: unset;
+        padding: var(--section-padding) 0;
     }
 
     .team-list {
-
+        gap: unset;
         flex-direction: row;
+    }
+
+    .team-item {
+        width: calc((100% - 3*var(--intendance)) / 4);
+    }
+
+    .team-social-list {
+        gap: unset;
+        justify-content: space-around;
+    }
+
+    .customers-list {
+        flex-wrap: nowrap;
+    }
+
+    .customers-item {
+        width: calc((100% - 5*var(--intendance)) / 6);
+        display: block;
     }
 
 

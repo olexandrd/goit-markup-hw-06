@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     :root {
         --section-padding: 96px;
     }
@@ -118,7 +118,9 @@
 
     .team-item {
         margin-bottom: 40px;
+
     }
+
 
     .customers-list {
         gap: 24px;
