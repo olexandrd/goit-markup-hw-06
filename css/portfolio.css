@@ -5,8 +5,7 @@
 */
 
 .portfolio {
-    padding-top: 96px;
-    padding-bottom: var(--section-padding);
+    padding: 48px 0;
 }
 
 .portfolio-subtitle {
@@ -18,7 +17,8 @@
     background-color: var(--cloud-cl);
     border: 1px solid var(--border-cl);
     border-radius: 4px;
-    padding: 12px 24px;
+    padding: 8px 16px;
+    margin-right: 8px;
     box-sizing: border-box;
     transition:
         background-color var(--transform-properties),
@@ -37,9 +37,11 @@
 
 .portfolio-btn-list {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--intendance);
-    justify-content: center;
-    margin-bottom: 72px;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+    gap: 16px;
 }
 
 .portfolio-list {
@@ -49,7 +51,7 @@
 }
 
 .portfolio-item {
-    width: calc((100% - 2*var(--intendance)) / 3);
+    width: 100%;
     transition: box-shadow var(--transform-properties);
 }
 

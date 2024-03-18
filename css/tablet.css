@@ -79,4 +79,22 @@
         flex-direction: row;
     }
 
+    .portfolio-item {
+        width: calc((100% - 2*var(--intendance)) / 3);
+    }
+
+    .portfolio {
+        padding-top: 96px;
+        padding-bottom: var(--section-padding);
+    }
+
+    .portfolio-btn-list {
+
+        margin-bottom: 72px;
+    }
+
+    .portfolio-btn {
+        padding: 12px 24px;
+    }
+
 }
