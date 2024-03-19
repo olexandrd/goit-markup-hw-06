@@ -141,7 +141,17 @@
         flex-direction: row;
         padding: 0 92px;
         gap: 24px;
+        align-items: flex-start;
     }
+
+    .footer-text-wrapper .logo-link {
+        padding: 0;
+
+    }
+
+    /* .footer-logo-link {
+        margin: 0;
+    } */
 
     .footer-text-wrapper {
         align-items: flex-start;

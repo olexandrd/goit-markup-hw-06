@@ -114,8 +114,7 @@
     letter-spacing: 0.04em;
     color: var(--white-cl);
     background-color: transparent;
-    /* border: 1px solid var(--white-cl); */
-    border: 1px solid #fff;
+    border: 1px solid var(--white-cl);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     opacity: 0.3;
     border-radius: 4px;

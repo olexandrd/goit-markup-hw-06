@@ -7,6 +7,7 @@
 
     .header-nav {
         gap: 76px;
+        margin-left: 140px;
     }
 
     .header-nav-list {
@@ -120,9 +121,44 @@
         padding: 16px 32px;
     }
 
+    .footer .container {
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    .footer {
+        padding-bottom: 0;
+    }
+
+    .footer-static {
+        flex-direction: row;
+        gap: 120px;
+        align-items: flex-start;
+    }
+
+    .footer-text-wrapper {
+        align-items: flex-start;
+    }
+
+    .footer-logo-link {
+        padding: 0;
+    }
 
     .footer-text {
+        padding: 0;
         max-width: 264px;
+    }
+
+    .footer-subscribe-wrapper {
+        align-items: flex-start;
+    }
+
+    .footer-form {
+        flex-direction: row;
+    }
+
+    .footer-form-input {
+        min-width: 264px;
     }
 
     .portfolio-item {
@@ -135,7 +171,7 @@
     }
 
     .portfolio-btn-list {
-
+        justify-content: center;
         margin-bottom: 72px;
     }
 
