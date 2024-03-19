@@ -104,11 +104,18 @@
 
     .customers-list {
         flex-wrap: nowrap;
+        gap: 24px;
+        display: flex;
     }
 
     .customers-item {
         width: calc((100% - 5*var(--intendance)) / 6);
         display: block;
+    }
+
+    .customers-item svg {
+        width: 100%;
+        height: 100%;
     }
 
 
