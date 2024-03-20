@@ -63,7 +63,7 @@
     }
 
     .advantage {
-        padding-bottom: var(--section-padding);
+        padding-bottom: 0;
     }
 
     .advantage-icon-container {
