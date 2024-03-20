@@ -5,19 +5,19 @@
 */
 
 .advantage {
-    padding-top: var(--section-padding);
+    padding: var(--section-padding) 0;
 }
 
 .advantage-subtitle {
     color: var(--navyblue-cl);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
 }
 
 .advantage-list {
     display: flex;
     flex-direction: column;
-    gap: var(--intendance);
+    gap: 72px;
     justify-content: center;
     align-items: center;
 }

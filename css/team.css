@@ -56,8 +56,19 @@
     transition: background-color var(--transform-properties), border var(--transform-properties);
 }
 
-.team-social-item:hover,
-.team-social-item:focus {
+
+
+
+@media (hover: hover) {
+
+    .team-social-item:hover,
+    .team-social-item:focus {
+        background-color: var(--ocean-cl);
+        border: 1px solid var(--ocean-cl);
+    }
+}
+
+.team-social-item:active {
     background-color: var(--ocean-cl);
     border: 1px solid var(--ocean-cl);
 }

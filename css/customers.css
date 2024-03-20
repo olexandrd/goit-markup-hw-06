@@ -14,7 +14,7 @@
 
 .customers-list {
     display: flex;
-    gap: 16px;
+    gap: 72px 16px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -26,7 +26,6 @@
     display: block;
     border-radius: 4px;
     height: 88px;
-    margin-bottom: 56px;
 }
 
 
@@ -42,11 +41,20 @@
     transition: border-color var(--transform-properties), color var(--transform-properties);
 }
 
-.customers-link:focus,
-.customers-link:hover {
+@media (hover: hover) {
+
+    .customers-link:focus,
+    .customers-link:hover {
+        border-color: var(--ocean-cl);
+        color: var(--ocean-cl);
+    }
+}
+
+.customers-link:active {
     border-color: var(--ocean-cl);
     color: var(--ocean-cl);
 }
+
 
 .customers-icon {
     fill: currentColor;

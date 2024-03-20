@@ -1,13 +1,18 @@
 @media screen and (min-width: 1158px) {
+    :root {
+        --section-padding: 120px;
+    }
+
     .container {
         max-width: 1158px;
         padding: 0 15px;
         margin: 0 auto;
     }
 
+
     .header-nav {
         gap: 76px;
-        margin-left: 140px;
+
     }
 
     .header-nav-list {
@@ -53,6 +58,10 @@
         }
     }
 
+    .hero .container {
+        padding: 188px 0;
+    }
+
     .advantage {
         padding-bottom: var(--section-padding);
     }
@@ -76,21 +85,23 @@
 
     .advantage-subtitle {
         color: var(--navyblue-cl);
-        font-weight: 700;
+        font-weight: 500;
         font-size: 20px;
+        text-align: left;
     }
 
     .advantage-item {
         justify-content: flex-start;
+        align-items: flex-start
     }
 
     .action {
-        display: unset;
-        padding: var(--section-padding) 0;
+        display: block;
+        padding-bottom: var(--section-padding);
     }
 
     .team-list {
-        gap: unset;
+        gap: block;
         flex-direction: row;
     }
 
@@ -113,6 +124,7 @@
         /* width: calc((100% - 5*var(--intendance)) / 6); */
         min-width: 168px;
         display: block;
+        margin-bottom: 0;
     }
 
     .customers-item svg {
@@ -127,7 +139,7 @@
     }
 
     .footer {
-        padding-bottom: 0;
+        padding: 100px 0;
     }
 
     .footer-static {
@@ -151,6 +163,7 @@
 
     .footer-subscribe-wrapper {
         align-items: flex-start;
+        margin-bottom: 0;
     }
 
     .footer-form {

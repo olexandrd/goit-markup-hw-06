@@ -1,7 +1,4 @@
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-    :root {
-        --section-padding: 96px;
-    }
 
     .container {
         max-width: 736px;
@@ -41,6 +38,7 @@
     .hero .container {
         color: var(--white-cl);
         padding: 112px 0;
+        padding: 188px 0;
 
     }
 
@@ -83,7 +81,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: var(--intendance);
+        gap: 72px var(--intendance);
     }
 
     .advantage-subtitle {
@@ -97,7 +95,6 @@
         justify-content: flex-start;
         max-width: calc((100% - var(--intendance)) / 2);
         align-items: flex-start;
-        margin-bottom: 48px;
     }
 
     .action {
@@ -113,22 +110,16 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: var(--intendance);
-    }
-
-    .team-item {
-        margin-bottom: 40px;
-
+        gap: 64px var(--intendance);
     }
 
 
     .customers-list {
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .customers-item {
         width: calc((100% - 2*var(--intendance)) / 3);
-        margin-bottom: 48px;
     }
 
     .customers-item svg {
@@ -148,10 +139,6 @@
         padding: 0;
 
     }
-
-    /* .footer-logo-link {
-        margin: 0;
-    } */
 
     .footer-text-wrapper {
         align-items: flex-start;
@@ -190,4 +177,9 @@
         width: calc((100% - var(--intendance)) / 2);
         margin-bottom: 24px;
     }
+
+    /* .modal {
+        min-width: 392px;
+        min-height: 584px;
+    } */
 }

@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: unset;
 }
 
 .header-nav {
@@ -23,7 +22,7 @@
     align-items: center;
 }
 
-.logo-link {
+.header-nav .logo-link {
     padding: 24px 0;
 }
 
@@ -74,10 +73,22 @@
     border-radius: 2px;
 }
 
-.address-link:hover,
-.address-link:focus,
-.header-link:hover,
-.header-link:focus {
+@media (hover: hover) {
+
+    .address-link:hover,
+    .address-link:focus,
+    .header-link:hover,
+    .header-link:focus {
+        color: var(--ocean-cl);
+    }
+}
+
+.footer-form-button:active {
+    background-color: var(--ocean-cl);
+}
+
+.address-link:active,
+.header-link:active {
     color: var(--ocean-cl);
 }
 

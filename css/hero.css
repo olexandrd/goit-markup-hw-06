@@ -43,7 +43,7 @@
     color: var(--white-cl);
     display: flex;
     flex-direction: column;
-    padding: 188px 0;
+    padding: 112px 0;
     justify-content: center;
     align-items: center;
     max-width: 1440px;
@@ -73,7 +73,14 @@
     transition: background-color var(--transform-properties);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+@media (hover: hover) {
+
+    .hero-btn:hover,
+    .hero-btn:focus {
+        background-color: var(--ocean-cl);
+    }
+}
+
+.hero-btn:active {
     background-color: var(--ocean-cl);
 }
