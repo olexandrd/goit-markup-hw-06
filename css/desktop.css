@@ -101,7 +101,7 @@
     }
 
     .team-list {
-        gap: block;
+        gap: 24px;
         flex-direction: row;
     }
 
@@ -159,6 +159,10 @@
     .footer-text {
         padding: 0;
         max-width: 264px;
+    }
+
+    .footer-social-section {
+        align-items: flex-start;
     }
 
     .footer-subscribe-wrapper {

@@ -24,8 +24,9 @@
     color: var(--cloud-cl);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-right: 64px;
-    padding-left: 64px;
+    max-width: 264px;
+    /* padding-right: 64px;
+    padding-left: 64px; */
 }
 
 .footer-social-section .footer-text {
@@ -60,6 +61,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
 }
 
 .footer-social-list {
