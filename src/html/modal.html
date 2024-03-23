@@ -1,0 +1,79 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-btn" type="button" data-modal-close>
+      <svg class="modal-btn-icon" width="8" height="8">
+        <use href="src/images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-content">
+      <p class="modal-title">Leave your contacts and we will call you back</p>
+      <form class="backdrop-form">
+        <label for="name-input" class="backdrop-form-label">
+          Name
+          <svg class="input-icon" width="24" height="24">
+            <use href="src/images/icons.svg#icon-person-black"></use>
+          </svg>
+          <input
+            name="name"
+            id="name-input"
+            type="text"
+            class="backdrop-form-input"
+          />
+        </label>
+        <label for="phone-input" class="backdrop-form-label">
+          Phone
+          <svg class="input-icon" width="24" height="24">
+            <use href="src/images/icons.svg#icon-phone-black"></use>
+          </svg>
+          <input
+            name="phone"
+            id="phone-input"
+            type="tel"
+            class="backdrop-form-input"
+          />
+        </label>
+        <label for="email-input" class="backdrop-form-label">
+          Email
+          <svg class="input-icon" width="24" height="24">
+            <use href="src/images/icons.svg#icon-email-black"></use>
+          </svg>
+          <input
+            name="email"
+            id="email-input"
+            type="email"
+            class="backdrop-form-input"
+          />
+        </label>
+        <label
+          for="comment-textarea"
+          class="backdrop-form-label backdrop-form-textarea-label"
+        >
+          Comment
+          <textarea
+            name="comment"
+            id="comment-textarea"
+            class="backdrop-form-input backdrop-form-text-input"
+            placeholder="Text input"
+          ></textarea>
+        </label>
+
+        <div class="backdrop-form-label backdrop-agreement">
+          <input type="checkbox" id="customCheckbox" hidden />
+          <label for="customCheckbox" class="checkbox-custom">
+            <svg class="icon-unchecked" width="16" height="16">
+              <use href="src/images/icons.svg#icon-checkbox-default"></use>
+            </svg>
+            <svg class="icon-checked" width="16" height="16">
+              <use href="src/images/icons.svg#icon-checkbox-click"></use>
+            </svg>
+          </label>
+          <p>
+            I accept the terms and conditions of the
+            <a class="backdrop-agreement-link" href="">Privacy Policy</a>
+          </p>
+        </div>
+        <button class="backdrop-btn btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
